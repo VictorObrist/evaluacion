@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+<<<<<<< HEAD
+/coverage
+
+# production
+/build
+=======
+coverage/
+
+# production
+build/
+>>>>>>> 792affcd1306a7500990cfa6a04f957d93347771
+
+# misc
+.DS_Store
+.env.local
+<<<<<<< HEAD
+.env.development
+.env.development.local
+.env.test.local
+.env.production
+=======
+.env.development.local
+.env.test.local
+>>>>>>> 792affcd1306a7500990cfa6a04f957d93347771
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+<<<<<<< HEAD
+yarn-error.log*
+=======
+yarn-error.log*
+>>>>>>> 792affcd1306a7500990cfa6a04f957d93347771
