@@ -30,6 +30,11 @@ export default function Navbar() {
               Usuarios
             </Link>
           </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/logout">
+              Cerrar sesion
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>
