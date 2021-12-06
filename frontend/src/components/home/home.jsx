@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navbar from "../../components/navbar/navbar";
 import { Navigate } from "react-router-dom";
 
 class Home extends Component {
@@ -24,7 +23,6 @@ class Home extends Component {
 
     return (
       <div>
-        <Navbar />
         <h1>Inicio</h1>
       </div>
     );
