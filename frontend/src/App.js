@@ -8,6 +8,8 @@ import Users from "./components/users/users";
 import Home from "./components/home/home";
 import Logout from "./components/logout/logout";
 import Layout from "./components/layout/layout";
+import HomeAdmin from "./components/admin/homeAdmin";
+import Products from "./components/products/products";
 
 function App() {
   // mostrar mi componente
@@ -20,6 +22,10 @@ function App() {
           <Route path="home" element={<Home />} />
           <Route path="logout" element={<Logout />} />
           <Route path="users" element={<Users />} />
+          <Route path="products" element={<Products />} />
+          <Route path="admin" element={<HomeAdmin />}>
+            <Route path="config" element={<HomeAdmin />} />
+          </Route>
         </Route>
       </Routes>
     </React.Fragment>

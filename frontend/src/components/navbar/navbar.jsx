@@ -1,11 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "./logo.png";
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark bg-primary">
       <Link className="navbar-brand" to="/">
-        Mi Sitio
+        <img
+          src={logo}
+          alt=""
+          width="30"
+          height="24"
+          className="d-inline-block align-text-top"
+        />
       </Link>
       <button
         className="navbar-toggler"
@@ -28,6 +35,16 @@ export default function Navbar() {
           <li className="nav-item">
             <Link className="nav-link" to="/users">
               Usuarios
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/products">
+              Productos
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/admin">
+              Admin
             </Link>
           </li>
           <li className="nav-item">
